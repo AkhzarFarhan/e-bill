@@ -1,0 +1,99 @@
+.container1 {
+	display: flex;
+	border-radius: 8px;
+	color: black;
+	background-color: #453b6d;
+	padding: 10px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: auto;
+	margin: auto;
+}
+
+.container1>div {
+    flex: 1 1 25%;
+}
+
+.itemHeader {
+	border-radius: 8px;
+	color: lightgrey;
+	padding: 10px;
+	font-size: 12px;
+}
+.itemBody {
+	border-radius: 8px;
+	color: #ffffff;
+	font-weight: bolder;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.table{
+	border-radius: 50px;
+	font-size: 15px;
+}
+
+.wrapper {
+ ;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  color: #75dac9;
+  font-size: 20px;
+  background-color: #1f7879;
+  padding: 20px;
+}
+
+.footer {
+  color: #ffffff;
+  font-size: 20px;
+  background-color: #31bdbe;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer1 {
+  font-size: 12px;
+  font-weight: thin;
+  padding: 12px;
+  text-align: right;
+
+}
+
+.footer2 {
+  font-size: 40px;
+
+}
+
+body {
+  padding: 20px;
+}
+
+/*css for graph starts*/
+
+@keyframes spin {
+  to { transform: rotate(.5turn); }
+}
+
+@keyframes bg {
+  50% { background: #655; }
+}
+
+.pie::before {
+  /* [Rest of styling stays the same] */
+  animation: spin 50s linear infinite,
+             bg 100s step-end infinite;
+  animation-play-state: paused;
+  animation-delay: inherit;
+}
+
+/*css for graph ends*/

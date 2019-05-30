@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>e-bill | Perpule</title>
+  </head>
+
+<body>
+
+<div class="container">
+
+  <div class="container1">
+  		<div class="itemHeader">DATE</div>
+  		<div class="itemHeader">ORDER ID</div>
+  		<div class="itemHeader">ITEMS</div>
+  		<div class="itemHeader">INVOICE AMOUNT</div>
+  		<div class="itemBody">27 MAY 2019 | 13:04</div>
+  		<div class="itemBody">89564214521</div>
+  		<div class="itemBody">2</div>
+  		<div class="itemBody">₹ 5600</div>
+  </div>
+
+  <br>
+
+  <div class="table-responsive">
+  <table class="table table-hover table-bordered table-striped ">
+
+    <thead>
+      <tr>
+        <th>ITEM DESCRIPTION</th>
+        <th>UNIT PRICE</th>
+        <th>QUANTITY</th>
+        <th>TOTAL PRICE</th>
+      </tr>
+    </thead>
+
+    <thead>
+    	<tr>
+        <th>FRUITS</th>
+        </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1.The Seasonal Fruit Torte</td>
+        <td>₹ 1800</td>
+        <td>1</td>
+        <td>₹ 1800</td>
+      </tr>
+    </tbody>
+
+
+    <thead>
+      <tr>
+        <th>GROCERIES</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>2. Olive Oil 5ltr</td>
+        <td>₹ 3600</td>
+        <td>1</td>
+        <td>₹ 3600</td>
+      </tr>
+    </tbody>
+
+    <thead>
+      <tr>
+        <th>TOTAL</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>₹ 5400</td>
+      </tr>
+    </tbody>
+
+  </table>
+  </div>
+
+
+
+<div class="row">
+    <div class="col-sm-6">
+      <!-- bargraph starts -->
+      <div class="pie" style="animation-delay: -20s"></div>
+      <div class="pie" style="animation-delay: -60s"></div>
+        
+      <!-- bar graph ends -->
+
+    </div>
+
+    <div class="col-sm-6">
+      <span class="wrapper">
+	       <header class="header">AWESOME!</header>
+	       <footer class="footer">
+              <div class="col-sm-3 footer1">
+                YOU HAVE <br> SAVED
+              </div>
+              <div class="col-sm-3 footer2">
+                ₹ 500
+              </div>
+            </footer>
+      </span>
+    </div>
+</div>
+
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <!-- own script starts -->
+    <script>$$('.pie').forEach(function(pie) {
+      var p = parseFloat(pie.textContent);
+      pie.style.animationDelay = '-' + p + 's';
+    });
+    </script>
+    <!-- own script ends -->
+  </body>
+</html>
