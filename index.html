@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,16 +28,47 @@
 
 <div class="container">
 
-  <div class="container1">
-  		<div class="itemHeader">DATE</div>
-  		<div class="itemHeader">ORDER ID</div>
-  		<div class="itemHeader">ITEMS</div>
-  		<div class="itemHeader">INVOICE AMOUNT</div>
-  		<div class="itemBody">27 MAY 2019 | 13:04</div>
-  		<div class="itemBody">89564214521</div>
-  		<div class="itemBody">2</div>
-  		<div class="itemBody">₹ 5600</div>
+
+ <div class="top">
+  <div class="row-new">
+    <div class="logo-new">
+      <img src="perpule_logo.png" height="40px; width: 120px;">
+    </div>
+
+    <div class="invoice-new">
+     <div class="invoicedownload">
+      <div class="download"> <a href="#" role="button"   class="btn"><i class="fa fa-download" style="padding-right: 10px"></i>INVOICE</a></div>
+     </div>
+    </div>
+
   </div>
+</div>
+
+
+<div class="billinfo1">
+  <div class="billinfo2">
+   <div class="billinfo3 topbillinfo">DATE</div>
+   <div class="billinfo3 bottombillinfo">27 MAY 2019 | 13:04</div>
+  </div>
+
+  <div class="billinfo2"> 
+    <div class="billinfo3 topbillinfo">ORDER ID</div>
+    <div class="billinfo3 bottombillinfo">89564214521</div>
+  </div>
+
+  <div class="billinfo2"> 
+    <div class="billinfo3 topbillinfo">ITEMS</div>
+    <div class="billinfo3 bottombillinfo">2</div>  
+   </div>
+
+  <div class="billinfo2"> 
+    <div class="billinfo3 topbillinfo">INVOICE AMOUNT</div>
+    <div class="billinfo3 bottombillinfo">₹ 5600</div> 
+  </div>
+  
+
+
+</div>
 
   <br>
 
@@ -90,24 +128,41 @@
 
 
 <div class="row">
-    <div class="col-sm-6 barchart">
-     <div class="graph" id="example"></div>
+    <div class="col-md-6 col-sm-12 barchart">
+         <div class="graph" id="chart"></div>
     </div>
 
-    <div class="col-sm-6">
-      <span class="wrapper">
-	       <header class="header">AWESOME!</header>
-	       <footer class="footer">
+    <div class="col-md-6 col-sm-12">
+      <div class="wrapper">
+	       <div class="header">AWESOME!</div>
+	       <div class="footer">
               <div class="col-sm-3 footer1">
                 YOU HAVE <br> SAVED
               </div>
               <div class="col-sm-3 footer2">
                 ₹ 500
               </div>
-            </footer>
-      </span>
+          </div>
+      </div>
     </div>
 </div>
+
+
+<!-- 
+
+ <div class="chartofferhead">
+  <div class="chartofferbody1">Bar Chart</div>
+   <div class="chartofferbody2">
+      <div class="awesome">AWESOME!</div>
+      <div class="offeramount">
+        <div class="saved">YOU HAVE<br>SAVED</div>
+        <div class="amount">₹ 500</div>
+      </div>
+   </div>
+
+
+ -->
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
